@@ -1,0 +1,200 @@
+/* ================= GLOBAL ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg,#0f0f0f,#1b1b1b);
+color:#fff;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+height:450px;
+background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.overlay h1{
+font-size:60px;
+letter-spacing:5px;
+color:#d4af37;
+font-weight:700;
+margin-bottom:15px;
+text-shadow:0 0 20px rgba(212,175,55,0.6);
+}
+
+.overlay p{
+font-size:18px;
+color:#ddd;
+letter-spacing:3px;
+}
+
+/* ================= FORM SECTION ================= */
+
+.form-section{
+padding:100px 20px;
+background: linear-gradient(to bottom,#0f0f0f,#1c1c1c);
+}
+
+.form-container{
+max-width:1000px;
+margin:auto;
+padding:60px;
+border-radius:30px;
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(20px);
+border:1px solid rgba(212,175,55,0.3);
+box-shadow:0 0 60px rgba(212,175,55,0.2);
+}
+
+h2{
+text-align:center;
+margin-bottom:50px;
+font-size:34px;
+color:#d4af37;
+letter-spacing:3px;
+}
+
+/* ================= GRID LAYOUT ================= */
+
+.row{
+display:flex;
+gap:30px;
+margin-bottom:30px;
+}
+
+.form-group{
+flex:1;
+}
+
+/* ================= LABELS ================= */
+
+label{
+display:block;
+margin-bottom:10px;
+font-size:13px;
+letter-spacing:2px;
+color:#d4af37;
+}
+
+/* ================= INPUTS ================= */
+
+input, select, textarea{
+width:100%;
+padding:15px;
+background:#111;
+border:1px solid #333;
+border-radius:15px;
+color:#fff;
+font-size:14px;
+transition:0.3s ease;
+}
+
+input::placeholder{
+color:#777;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+outline:none;
+border:1px solid #d4af37;
+box-shadow:0 0 20px rgba(212,175,55,0.6);
+background:#141414;
+}
+
+/* ================= LUXURY CHECKBOX CARDS ================= */
+
+.checkbox-group{
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:20px 40px;
+margin-top:10px;
+}
+
+.checkbox-group label{
+display:flex;
+align-items:center;
+gap:12px;
+padding:15px;
+background:#111;
+border-radius:15px;
+border:1px solid #333;
+color:#ccc;
+cursor:pointer;
+transition:0.3s ease;
+}
+
+.checkbox-group label:hover{
+border:1px solid #d4af37;
+box-shadow:0 0 15px rgba(212,175,55,0.5);
+transform:translateY(-3px);
+}
+
+.checkbox-group input{
+width:18px;
+height:18px;
+accent-color:#d4af37;
+}
+
+/* ================= TEXTAREA ================= */
+
+textarea{
+min-height:120px;
+resize:none;
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+width:100%;
+padding:18px;
+font-size:18px;
+font-weight:700;
+letter-spacing:3px;
+border:none;
+border-radius:50px;
+background:linear-gradient(90deg,#d4af37,#f5e27a);
+color:#000;
+cursor:pointer;
+transition:0.4s ease;
+margin-top:40px;
+}
+
+.btn:hover{
+background:linear-gradient(90deg,#f5e27a,#d4af37);
+box-shadow:0 0 35px rgba(212,175,55,0.8);
+transform:translateY(-5px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.row{
+flex-direction:column;
+}
+
+.checkbox-group{
+grid-template-columns:1fr;
+}
+
+.form-container{
+padding:35px;
+}
+
+.overlay h1{
+font-size:40px;
+}
+
+}
