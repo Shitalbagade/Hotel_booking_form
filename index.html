@@ -19,8 +19,7 @@
 <div class="form-container">
 <h2>Book Your Luxury Stay</h2>
 
-<form action="https://formsubmit.co/shitalbagade2005@gmail.com" method="POST">
-
+<form id="bookingForm" action="https://formsubmit.co/shitalbagade2005@gmail.com" method="POST">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="New 5-Star Hotel Booking!">
 
@@ -51,12 +50,12 @@
 <div class="row">
 <div class="form-group">
 <label>Check-in Date *</label>
-<input type="date" name="Check-in Date" required>
+<input type="date" id="checkin" name="Check-in Date" required>
 </div>
 
 <div class="form-group">
 <label>Check-out Date *</label>
-<input type="date" name="Check-out Date" required>
+<input type="date" id="checkout" name="Check-out Date" required>
 </div>
 </div>
 
@@ -121,10 +120,15 @@
 
 <button type="submit" class="btn">Confirm Luxury Booking</button>
 
+<p id="errorMsg" style="color:red;margin-top:10px;"></p>
+<p id="nights" style="color:#d4af37;margin-top:10px;"></p>
+
+</form>
 </form>
 </div>
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
